@@ -4466,11 +4466,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Usuario 1\\Documents\\Repositorios\\Sales Date Prediction\\SalesDate.Test\\SalesDate.Test.csproj",
+      "projectUniqueName": "C:\\Users\\Usuario 1\\Documents\\Repositorios\\SalesPredictionFront\\SalesPredictionBack\\SalesDate.Test\\SalesDate.Test.csproj",
       "projectName": "SalesDate.Test",
-      "projectPath": "C:\\Users\\Usuario 1\\Documents\\Repositorios\\Sales Date Prediction\\SalesDate.Test\\SalesDate.Test.csproj",
+      "projectPath": "C:\\Users\\Usuario 1\\Documents\\Repositorios\\SalesPredictionFront\\SalesPredictionBack\\SalesDate.Test\\SalesDate.Test.csproj",
       "packagesPath": "C:\\Users\\Usuario 1\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Usuario 1\\Documents\\Repositorios\\Sales Date Prediction\\SalesDate.Test\\obj\\",
+      "outputPath": "C:\\Users\\Usuario 1\\Documents\\Repositorios\\SalesPredictionFront\\SalesPredictionBack\\SalesDate.Test\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Usuario 1\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -4488,8 +4488,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\Usuario 1\\Documents\\Repositorios\\Sales Date Prediction\\Sales Date Prediction\\Sales Date Prediction.csproj": {
-              "projectPath": "C:\\Users\\Usuario 1\\Documents\\Repositorios\\Sales Date Prediction\\Sales Date Prediction\\Sales Date Prediction.csproj"
+            "C:\\Users\\Usuario 1\\Documents\\Repositorios\\SalesPredictionFront\\SalesPredictionBack\\Sales Date Prediction\\Sales Date Prediction.csproj": {
+              "projectPath": "C:\\Users\\Usuario 1\\Documents\\Repositorios\\SalesPredictionFront\\SalesPredictionBack\\Sales Date Prediction\\Sales Date Prediction.csproj"
             }
           }
         }

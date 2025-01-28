@@ -2863,11 +2863,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Usuario 1\\Documents\\Repositorios\\Sales Date Prediction\\Sales.Services\\Sales.Services.csproj",
+      "projectUniqueName": "C:\\Users\\Usuario 1\\Documents\\Repositorios\\SalesPredictionFront\\SalesPredictionBack\\Sales.Services\\Sales.Services.csproj",
       "projectName": "Sales.Services",
-      "projectPath": "C:\\Users\\Usuario 1\\Documents\\Repositorios\\Sales Date Prediction\\Sales.Services\\Sales.Services.csproj",
+      "projectPath": "C:\\Users\\Usuario 1\\Documents\\Repositorios\\SalesPredictionFront\\SalesPredictionBack\\Sales.Services\\Sales.Services.csproj",
       "packagesPath": "C:\\Users\\Usuario 1\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Usuario 1\\Documents\\Repositorios\\Sales Date Prediction\\Sales.Services\\obj\\",
+      "outputPath": "C:\\Users\\Usuario 1\\Documents\\Repositorios\\SalesPredictionFront\\SalesPredictionBack\\Sales.Services\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Usuario 1\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -2885,8 +2885,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\Usuario 1\\Documents\\Repositorios\\Sales Date Prediction\\Sales.Data\\Sales.DataAccess.csproj": {
-              "projectPath": "C:\\Users\\Usuario 1\\Documents\\Repositorios\\Sales Date Prediction\\Sales.Data\\Sales.DataAccess.csproj"
+            "C:\\Users\\Usuario 1\\Documents\\Repositorios\\SalesPredictionFront\\SalesPredictionBack\\Sales.Data\\Sales.DataAccess.csproj": {
+              "projectPath": "C:\\Users\\Usuario 1\\Documents\\Repositorios\\SalesPredictionFront\\SalesPredictionBack\\Sales.Data\\Sales.DataAccess.csproj"
             }
           }
         }

@@ -13,3 +13,19 @@ C:\Users\Usuario 1\Documents\Repositorios\Sales Date Prediction\Sales.Services\o
 C:\Users\Usuario 1\Documents\Repositorios\Sales Date Prediction\Sales.Services\obj\Debug\net8.0\refint\Sales.Services.dll
 C:\Users\Usuario 1\Documents\Repositorios\Sales Date Prediction\Sales.Services\obj\Debug\net8.0\Sales.Services.pdb
 C:\Users\Usuario 1\Documents\Repositorios\Sales Date Prediction\Sales.Services\obj\Debug\net8.0\ref\Sales.Services.dll
+C:\Users\Usuario 1\Documents\Repositorios\SalesPredictionFront\SalesPredictionBack\Sales.Services\bin\Debug\net8.0\Sales.Services.deps.json
+C:\Users\Usuario 1\Documents\Repositorios\SalesPredictionFront\SalesPredictionBack\Sales.Services\bin\Debug\net8.0\Sales.Services.dll
+C:\Users\Usuario 1\Documents\Repositorios\SalesPredictionFront\SalesPredictionBack\Sales.Services\bin\Debug\net8.0\Sales.Services.pdb
+C:\Users\Usuario 1\Documents\Repositorios\SalesPredictionFront\SalesPredictionBack\Sales.Services\bin\Debug\net8.0\Sales.DataAccess.dll
+C:\Users\Usuario 1\Documents\Repositorios\SalesPredictionFront\SalesPredictionBack\Sales.Services\bin\Debug\net8.0\Sales.DataAccess.pdb
+C:\Users\Usuario 1\Documents\Repositorios\SalesPredictionFront\SalesPredictionBack\Sales.Services\obj\Debug\net8.0\Sales.Services.csproj.AssemblyReference.cache
+C:\Users\Usuario 1\Documents\Repositorios\SalesPredictionFront\SalesPredictionBack\Sales.Services\obj\Debug\net8.0\Sales.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuario 1\Documents\Repositorios\SalesPredictionFront\SalesPredictionBack\Sales.Services\obj\Debug\net8.0\Sales.Services.AssemblyInfoInputs.cache
+C:\Users\Usuario 1\Documents\Repositorios\SalesPredictionFront\SalesPredictionBack\Sales.Services\obj\Debug\net8.0\Sales.Services.AssemblyInfo.cs
+C:\Users\Usuario 1\Documents\Repositorios\SalesPredictionFront\SalesPredictionBack\Sales.Services\obj\Debug\net8.0\Sales.Services.csproj.CoreCompileInputs.cache
+C:\Users\Usuario 1\Documents\Repositorios\SalesPredictionFront\SalesPredictionBack\Sales.Services\obj\Debug\net8.0\Sales.Services.sourcelink.json
+C:\Users\Usuario 1\Documents\Repositorios\SalesPredictionFront\SalesPredictionBack\Sales.Services\obj\Debug\net8.0\Sales.Se.F211BEA6.Up2Date
+C:\Users\Usuario 1\Documents\Repositorios\SalesPredictionFront\SalesPredictionBack\Sales.Services\obj\Debug\net8.0\Sales.Services.dll
+C:\Users\Usuario 1\Documents\Repositorios\SalesPredictionFront\SalesPredictionBack\Sales.Services\obj\Debug\net8.0\refint\Sales.Services.dll
+C:\Users\Usuario 1\Documents\Repositorios\SalesPredictionFront\SalesPredictionBack\Sales.Services\obj\Debug\net8.0\Sales.Services.pdb
+C:\Users\Usuario 1\Documents\Repositorios\SalesPredictionFront\SalesPredictionBack\Sales.Services\obj\Debug\net8.0\ref\Sales.Services.dll
