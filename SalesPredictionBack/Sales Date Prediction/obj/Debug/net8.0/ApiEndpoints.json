@@ -1,0 +1,134 @@
+[
+  {
+    "ContainingType": "Sales_Date_Prediction.Controllers.CustomersController",
+    "Method": "GetSalesPredictions",
+    "RelativePath": "Customers/getSalesPrediction",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "Sales.Services.DTOs.ResponseDTO\u00601[[System.Collections.Generic.List\u00601[[Sales.Services.DTOs.SalesPredictionDTO, Sales.Services, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Sales_Date_Prediction.Controllers.EmployeesController",
+    "Method": "GetEmployees",
+    "RelativePath": "Employees/getEmployees",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "Sales.Services.DTOs.ResponseDTO\u00601[[System.Collections.Generic.List\u00601[[Sales.Services.DTOs.EmployeesDTO, Sales.Services, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Sales_Date_Prediction.Controllers.OrdersController",
+    "Method": "AddNewOrder",
+    "RelativePath": "Orders/addOrder",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "newOrder",
+        "Type": "Sales.Services.DTOs.NewOrderDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Sales.Services.DTOs.ResponseDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Sales_Date_Prediction.Controllers.OrdersController",
+    "Method": "GetOrders",
+    "RelativePath": "Orders/getOrders/{customerId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "customerId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Sales.Services.DTOs.ResponseDTO\u00601[[System.Collections.Generic.List\u00601[[Sales.Services.DTOs.OrdersDTO, Sales.Services, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Sales_Date_Prediction.Controllers.ProductsController",
+    "Method": "GetProducts",
+    "RelativePath": "Products/getProducts",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "Sales.Services.DTOs.ResponseDTO\u00601[[System.Collections.Generic.List\u00601[[Sales.Services.DTOs.ProductsDTO, Sales.Services, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Sales_Date_Prediction.Controllers.ShippersController",
+    "Method": "GetShippers",
+    "RelativePath": "Shippers/getShippers",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "Sales.Services.DTOs.ResponseDTO\u00601[[System.Collections.Generic.List\u00601[[Sales.Services.DTOs.ShippersDTO, Sales.Services, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]
