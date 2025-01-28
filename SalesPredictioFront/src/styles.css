@@ -1,0 +1,19 @@
+@import './assets/css/_index.css';
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.header-add{
+    background-color: var(--verde);
+    height: 60px;
+}
+
+.header-orders{
+    background-color: var(--rojo);
+    height: 60px;
+}
+
+.header-home{
+    background-color: var(--black);
+    height: 60px;
+}

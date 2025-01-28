@@ -1,0 +1,15 @@
+<div>
+    <div class="col d-flex align-items-center header-orders">
+        <div class="container">
+            <h2 class="m-0">{{title}} - Orders</h2>
+        </div>
+    </div>
+    <mat-dialog-content class="p-0">
+        @if (showTable) {
+        <app-table [table]="table"></app-table>
+        }
+    </mat-dialog-content>
+    <mat-dialog-actions class="d-flex flex-row-reverse justify-content-end">
+        <button type="button" class="btnRead" mat-button (click)="closeTable()">CLOSE</button>
+    </mat-dialog-actions>
+</div>

@@ -1,0 +1,9 @@
+@import '_color.css';
+
+.btnCreate{
+    color: var(--verde) !important;
+}
+
+.btnRead{
+    color: var(--rojo) !important;
+}

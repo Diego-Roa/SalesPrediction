@@ -1,0 +1,10 @@
+<div>
+    <div class="col d-flex align-items-center header-home">
+        <div class="container">
+            <h2 class="m-0">Sales Date Prediction App</h2>
+        </div>
+    </div>
+    @if (showTable) {
+        <app-table [table]="table" (create)="addNewOrder($event)" (read)="viewOrders($event)"></app-table>
+    }
+</div>

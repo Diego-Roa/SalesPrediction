@@ -1,0 +1,9 @@
+@import '_color.css';
+
+h1{
+    color: var(--blanco) !important;
+}
+
+h2{
+    color: var(--blanco) !important;
+}

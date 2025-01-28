@@ -1,0 +1,181 @@
+<div>
+    <div class="col d-flex align-items-center header-add">
+        <div class="container">
+            <h2 class="m-0">{{customerName}} - New Order</h2>
+        </div>
+    </div>
+    <form [formGroup]="orderForm" (submit)="addOrder()">
+        <mat-dialog-content>
+            <div class=" container col">
+                <h3>Order</h3>
+
+                <div class="row d-flex">
+                    <div class="col">
+                        <mat-form-field class="w-100" appearance="outline">
+                            <mat-label for="empId"> Employee</mat-label>
+                            <mat-select formControlName="empId">
+                                @for (employee of employees; track $index) {
+                                <mat-option [value]="employee.empId">{{employee.fullName}}</mat-option>
+                                }
+                            </mat-select>
+                            @if (orderForm.get('empId')?.hasError('required')) {
+                            <mat-error>Employee is <strong>required</strong></mat-error>
+                            }
+                        </mat-form-field>
+                    </div>
+                    <div class="col">
+                        <mat-form-field class="w-100" appearance="outline">
+                            <mat-label for="shipperId"> Shipper</mat-label>
+                            <mat-select formControlName="shipperId">
+                                @for (shipper of shippers; track $index) {
+                                <mat-option [value]="shipper.shipperId">{{shipper.companyName}}</mat-option>
+                                }
+                            </mat-select>
+                            @if (orderForm.get('shipperId')?.hasError('required')) {
+                            <mat-error>Shipper is <strong>required</strong></mat-error>
+                            }
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <mat-form-field class="w-100" appearance="outline">
+                            <mat-label>Ship Name</mat-label>
+                            <input type="text" matInput formControlName="shipName">
+                            @if (orderForm.get('shipName')?.hasError('required')) {
+                            <mat-error>Ship Name is <strong>required</strong></mat-error>
+                            }
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <mat-form-field class="w-100" appearance="outline">
+                            <mat-label>Ship Address</mat-label>
+                            <input type="text" matInput formControlName="shipAddress">
+                            @if (orderForm.get('shipAddress')?.hasError('required')) {
+                            <mat-error>Ship Address is <strong>required</strong></mat-error>
+                            }
+                        </mat-form-field>
+                    </div>
+                    <div class="col">
+                        <mat-form-field class="w-100" appearance="outline">
+                            <mat-label>Ship City</mat-label>
+                            <input type="text" matInput formControlName="shipCity">
+                            @if (orderForm.get('shipCity')?.hasError('required')) {
+                            <mat-error>Ship City is <strong>required</strong></mat-error>
+                            }
+                        </mat-form-field>
+                    </div>
+                    <div class="col">
+                        <mat-form-field class="w-100" appearance="outline">
+                            <mat-label>Ship Country</mat-label>
+                            <input type="text" matInput formControlName="shipCountry">
+                            @if (orderForm.get('shipCountry')?.hasError('required')) {
+                            <mat-error>Ship Country is <strong>required</strong></mat-error>
+                            }
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <mat-form-field class="w-100" appearance="outline">
+                            <mat-label>Order Date</mat-label>
+                            <input matInput formControlName="orderDate" [matDatepicker]="orderPicker">
+                            <mat-datepicker-toggle matIconSuffix [for]="orderPicker"></mat-datepicker-toggle>
+                            <mat-datepicker #orderPicker></mat-datepicker>
+                            @if (orderForm.get('orderDate')?.hasError('required')) {
+                            <mat-error>Order Date is <strong>required</strong></mat-error>
+                            }
+                        </mat-form-field>
+                    </div>
+                    <div class="col">
+                        <mat-form-field class="w-100" appearance="outline">
+                            <mat-label>Required Date</mat-label>
+                            <input matInput formControlName="requiredDate" [matDatepicker]="requiredPicker">
+                            <mat-datepicker-toggle matIconSuffix [for]="requiredPicker"></mat-datepicker-toggle>
+                            <mat-datepicker #requiredPicker></mat-datepicker>
+                            @if (orderForm.get('requiredDate')?.hasError('required')) {
+                            <mat-error>Required Date is <strong>required</strong></mat-error>
+                            }
+                        </mat-form-field>
+                    </div>
+                    <div class="col">
+                        <mat-form-field class="w-100" appearance="outline">
+                            <mat-label>Shipped Date</mat-label>
+                            <input matInput formControlName="shippedDate" [matDatepicker]="shippedPicker">
+                            <mat-datepicker-toggle matIconSuffix [for]="shippedPicker"></mat-datepicker-toggle>
+                            <mat-datepicker #shippedPicker></mat-datepicker>
+                            @if (orderForm.get('shippedDate')?.hasError('required')) {
+                            <mat-error>Shipped Date is <strong>required</strong></mat-error>
+                            }
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div class="row">
+                    <mat-form-field class="w-100" appearance="outline">
+                        <mat-label>Freight</mat-label>
+                        <input type="number" matInput formControlName="freight">
+                        @if (orderForm.get('freight')?.hasError('required')) {
+                        <mat-error>Freight is <strong>required</strong></mat-error>
+                        }
+                    </mat-form-field>
+                </div>
+                <h3>Order Details</h3>
+                <div class="row">
+                    <div class="col">
+                        <mat-form-field class="w-100" appearance="outline">
+                            <mat-label for="productId"> Product</mat-label>
+                            <mat-select formControlName="productId">
+                                @for (product of products; track $index) {
+                                <mat-option [value]="product.productId">{{product.productName}}</mat-option>
+                                }
+                            </mat-select>
+                            @if (orderForm.get('productId')?.hasError('required')) {
+                            <mat-error>Product is <strong>required</strong></mat-error>
+                            }
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <mat-form-field class="w-100" appearance="outline">
+                            <mat-label for="unitPrice"> UnitPrice</mat-label>
+                            <input type="number" matInput formControlName="unitPrice">
+                            @if (orderForm.get('unitPrice')?.hasError('required')) {
+                            <mat-error>UnitPrice is <strong>required</strong></mat-error>
+                            }
+                        </mat-form-field>
+                    </div>
+                    <div class="col">
+                        <mat-form-field class="w-100" appearance="outline">
+                            <mat-label for="qty"> Quantity</mat-label>
+                            <input type="number" matInput formControlName="qty">
+                            @if (orderForm.get('qty')?.hasError('required')) {
+                            <mat-error>Quantity is <strong>required</strong></mat-error>
+                            }
+                        </mat-form-field>
+                    </div>
+                    <div class="col">
+                        <mat-form-field class="w-100" appearance="outline">
+                            <mat-label for="discount"> Discount</mat-label>
+                            <input type="number" placeholder="0.00" matInput formControlName="discount" max="1">
+                            @if (orderForm.get('discount')?.hasError('required')) {
+                            <mat-error>Discount is <strong>required</strong></mat-error>
+                            }
+                        </mat-form-field>
+                    </div>
+                </div>
+
+            </div>
+        </mat-dialog-content>
+        <mat-dialog-actions>
+            <div>
+                <button type="button" mat-button class="btnRead" (click)="closeForm()">CLOSE</button>
+            </div>
+            <div>
+                <button type="submit" mat-button class="btnCreate">SAVE</button>
+            </div>
+        </mat-dialog-actions>
+    </form>
+</div>
