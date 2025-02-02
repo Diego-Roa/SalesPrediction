@@ -20,6 +20,10 @@ namespace Sales_Date_Prediction.Controllers
             this.employeesService = employeesService;
         }
 
+        /// <summary>
+        ///  Servicio que obtiene toda la lista de empleados
+        /// </summary>
+        /// <returns></returns>
         [HttpGet("getEmployees")]
         public ResponseDTO<List<EmployeesDTO>> GetEmployees()
         {

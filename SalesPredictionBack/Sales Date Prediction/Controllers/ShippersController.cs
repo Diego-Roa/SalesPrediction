@@ -17,6 +17,10 @@ namespace Sales_Date_Prediction.Controllers
             this.shippersService = shippersService;
         }
 
+        /// <summary>
+        /// Servicio que obtiene todos los transportistas
+        /// </summary>
+        /// <returns> Lista de transportistas</returns>
         [HttpGet("getShippers")]
         public ResponseDTO<List<ShippersDTO>> GetShippers()
         {

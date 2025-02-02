@@ -15,6 +15,10 @@ namespace Sales_Date_Prediction.Controllers
             this.productsService = productsService;
         }
 
+        /// <summary>
+        /// Servicio que obtiene todos los productos
+        /// </summary>
+        /// <returns> Lista de todos los productos</returns>
         [HttpGet("getProducts")]
         public ResponseDTO<List<ProductsDTO>> GetProducts()
         {

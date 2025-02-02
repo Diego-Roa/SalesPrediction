@@ -15,10 +15,15 @@ namespace Sales_Date_Prediction.Controllers
             this.customersService = customersService;
         }
 
+        /// <summary>
+        /// Servicio que obtiene el listado de clientes con su ultima orden
+        /// y predicción de proxima fecha de envio
+        /// </summary>
+        /// <returns></returns>
         [HttpGet("getSalesPrediction")]
-        public ResponseDTO<List<SalesPredictionDTO>> GetSalesPredictions()
+        public ResponseDTO<List<SalesPredictionDTO>> GetSalesPredictions(string? searchCompany)
         {
-            return customersService.GetSalesDatePrediction();
+            return customersService.GetSalesDatePrediction(searchCompany);
         }
     }
 }

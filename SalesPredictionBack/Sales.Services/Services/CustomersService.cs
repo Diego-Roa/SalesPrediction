@@ -13,10 +13,10 @@ namespace Sales.Services.Services
         }
 
         /// <summary>
-        /// Servicio para obtener lista de clientes con su respectiva prediccion
+        /// Servicio para obtener lista de clientes con su respectiva predicción
         /// </summary>
         /// <returns ResponseDTO> lista de clientes con prediccion de fecha</returns>
-        public ResponseDTO<List<SalesPredictionDTO>> GetSalesDatePrediction()
+        public ResponseDTO<List<SalesPredictionDTO>> GetSalesDatePrediction(string? searchCompany)
         {
             var salesResponse = new ResponseDTO<List<SalesPredictionDTO>>(false, "success", null);
             var ordersGrouped = context.Orders
@@ -63,6 +63,10 @@ namespace Sales.Services.Services
                     CompanyName = i.Customer
                 };
                 data.Add(_data);
+            }
+            if (!String.IsNullOrEmpty(searchCompany))
+            {
+                data = data.Where(s => s.CompanyName.IndexOf(searchCompany, StringComparison.OrdinalIgnoreCase) >= 0).ToList();
             }
             salesResponse.Data = data;
             salesResponse.Result = true;
