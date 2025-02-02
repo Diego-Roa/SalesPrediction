@@ -1,7 +1,7 @@
 <div>
     <div class="col d-flex align-items-center header-add">
         <div class="container">
-            <h2 class="m-0">{{customerName}} - New Order</h2>
+            <h2 class="h2-white m-0">{{customerName}} - New Order</h2>
         </div>
     </div>
     <form [formGroup]="orderForm" (submit)="addOrder()">
@@ -159,9 +159,12 @@
                     <div class="col">
                         <mat-form-field class="w-100" appearance="outline">
                             <mat-label for="discount"> Discount</mat-label>
-                            <input type="number" placeholder="0.00" matInput formControlName="discount" max="1">
+                            <input type="number" placeholder="0.000" matInput formControlName="discount" max="1">
                             @if (orderForm.get('discount')?.hasError('required')) {
                             <mat-error>Discount is <strong>required</strong></mat-error>
+                            }
+                            @if (orderForm.get('discount')?.hasError('percentajeInvalid')) {
+                            <mat-error>Discount must be between <strong>0 and 1</strong></mat-error>
                             }
                         </mat-form-field>
                     </div>

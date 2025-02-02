@@ -8,6 +8,7 @@ import { Shippers } from '../../interfaces/Shippers';
 import { Products } from '../../interfaces/Products';
 import { ShippersService } from '../../services/shippers.service';
 import { ProductsService } from '../../services/products.service';
+import { percentajeValidator } from '../../utils/percentaje-validator';
 
 @Component({
   selector: 'app-new-order',
@@ -55,7 +56,7 @@ export class NewOrderComponent implements OnInit{
       productId: ['', [Validators.required]],
       unitPrice: ['', [Validators.required]],
       qty: ['', [Validators.required]],
-      discount: ['', [Validators.required]],
+      discount: ['', [Validators.required, percentajeValidator]],
     })
   }
 

@@ -1,5 +1,5 @@
 import { Injectable, inject } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpParams } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { appsettings } from '../settings/settings';
 
@@ -11,7 +11,8 @@ export class CustomersService {
 
   private readonly http = inject(HttpClient);
 
-  getPredictionSales(): Observable<any> {
-    return this.http.get<any>(`${this.baseUrl}/getSalesPrediction`);
+  getPredictionSales(searchCompany?: string): Observable<any> {
+    const params = new HttpParams().set('searchCompany', searchCompany ?? '');
+    return this.http.get<any>(`${this.baseUrl}/getSalesPrediction`,{params});
   }
 }

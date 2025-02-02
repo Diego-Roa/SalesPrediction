@@ -8,13 +8,16 @@ import { MatSortModule } from '@angular/material/sort';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatButton } from '@angular/material/button';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
     declarations:[
-        TableComponent
+        TableComponent,
+        HeaderComponent
     ],
     exports: [
-        TableComponent
+        TableComponent,
+        HeaderComponent
     ],
     imports: [
         CommonModule,

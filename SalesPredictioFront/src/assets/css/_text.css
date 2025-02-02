@@ -4,6 +4,10 @@ h1{
     color: var(--blanco) !important;
 }
 
-h2{
+.h2-white{
     color: var(--blanco) !important;
+}
+
+.h2-black{
+    color: var(--black) !important;
 }

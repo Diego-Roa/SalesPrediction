@@ -3,6 +3,7 @@
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
+/* Cabeceras*/
 .header-add{
     background-color: var(--verde);
     height: 60px;
@@ -16,4 +17,20 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .header-home{
     background-color: var(--black);
     height: 60px;
+}
+
+/* Scroll*/
+::-webkit-scrollbar {
+width: 8px;
+height: 8px;
+}
+
+::-webkit-scrollbar-track {
+background: #f1f1f1;
+border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+background: #888;
+border-radius: 4px;
 }

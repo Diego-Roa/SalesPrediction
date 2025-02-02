@@ -1,10 +1,17 @@
-<div>
-    <div class="col d-flex align-items-center header-home">
-        <div class="container">
-            <h2 class="m-0">Sales Date Prediction App</h2>
+<div class="container">
+    <div class="row d-flex flex-row align-items-center p-1">
+        <div class="col">
+            <h2 class="h2-black">Customer</h2>
+        </div>
+        <div class="col">
+            <mat-form-field class="w-100" appearance="outline">
+                <mat-label>Filter</mat-label>
+                <input type="text" matInput [formControl]="searchCompany" #input>
+            </mat-form-field>
         </div>
     </div>
+
     @if (showTable) {
-        <app-table [table]="table" (create)="addNewOrder($event)" (read)="viewOrders($event)"></app-table>
+    <app-table [table]="table" (create)="addNewOrder($event)" (read)="viewOrders($event)"></app-table>
     }
 </div>
